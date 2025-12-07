@@ -36,7 +36,7 @@ A component becomes a folder the moment it has related files.
 
 **Example transformation:**
 
-\`\`\`
+```
 # Before: Single file
 src/components/
 └── Column.tsx
@@ -46,7 +46,7 @@ src/components/
 └── {MainComponent}/
     ├── index.tsx         # Was Column.tsx
     └── StatusToggle.tsx  # New sub-component
-\`\`\`
+```
 
 **Why `index.tsx`:**
 - Imports stay clean: `import { Column } from '@/components/Column'`
@@ -78,7 +78,7 @@ Count files in your component folder:
 
 For each file, verify placement:
 
-\`\`\`
+```
 [ ] Sub-component only used by parent? 
     -> Parent/SubComponent.tsx
 
@@ -93,13 +93,13 @@ For each file, verify placement:
 
 [ ] Styles/variants only for this component?
     -> Component/styles.ts
-\`\`\`
+```
 
 ---
 
 ## 5. Global vs Local Decision Tree
 
-\`\`\`
+```
 Is it used in multiple unrelated features?
 ├── YES -> src/hooks/ or src/utils/
 └── NO
@@ -109,7 +109,7 @@ Is it used in multiple unrelated features?
             └── Is it a domain concept (e.g., ticket, user)?
                 ├── YES -> src/lib/ or src/services/
                 └── NO -> Reconsider if needed
-\`\`\`
+```
 
 ---
 
@@ -130,7 +130,7 @@ Is it used in multiple unrelated features?
 
 Review your structure for these anti-patterns:
 
-\`\`\`
+```
 [ ] Global hooks/ folder has component-specific hooks
 [ ] Global utils/ folder growing without auditing usage
 [ ] Deeply nested: Component/SubComponent/hooks/utils/
@@ -138,7 +138,7 @@ Review your structure for these anti-patterns:
 [ ] Hook named after component but lives globally
 [ ] Utility imported by only one component but lives in src/utils/
 [ ] Component folder without index.tsx (inconsistent imports)
-\`\`\`
+```
 
 ---
 
@@ -158,13 +158,13 @@ Move code when:
 ## 9. Example Structures
 
 ### Small Component (1-3 files)
-\`\`\`
+```
 src/components/
 └── Button.tsx          # No folder needed
-\`\`\`
+```
 
 ### Medium Component (4-10 files)
-\`\`\`
+```
 src/components/
 └── {MainComponent}/
     ├── index.tsx
@@ -172,10 +172,10 @@ src/components/
     ├── useDropZone.ts
     ├── useButtonModes.ts
     └── buttonModeStyles.ts
-\`\`\`
+```
 
 ### Large Component (10+ files) - Consider Splitting
-\`\`\`
+```
 src/components/
 └── {MainComponent}/
     ├── index.tsx
@@ -189,7 +189,7 @@ src/components/
     └── utils/
         ├── buttonModeStyles.ts
         └── positionCalculator.ts
-\`\`\`
+```
 
 ---
 

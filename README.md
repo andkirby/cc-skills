@@ -1,4 +1,4 @@
-# CC Skills
+# Claude Code Skills
 
 > A collection of specialized skills for Claude Code that enhance development productivity
 

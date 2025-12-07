@@ -90,9 +90,3 @@ Contributions are welcome! To add a new skill:
 ## License
 
 This project is licensed under the MIT License.
-
-## Resources
-
-- [Claude Code Documentation](https://docs.anthropic.com/claude/docs/claude-code)
-- [Skill Creator Guide](https://docs.anthropic.com/claude/docs/claude-code/skills)
-- [Issue Tracker](https://github.com/anthropics/claude-code/issues)

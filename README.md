@@ -5,11 +5,11 @@
 This project contains modular skills that extend Claude Code's capabilities for specific development workflows, including React component development, UI implementation, and frontend best practices.
 
 ## Features
-
-- **React Component Development** - Production-ready component templates and patterns
-- **Modern Development Patterns** - Hooks, TypeScript, and best practices
-- **Automated Tooling** - Scripts for component generation and validation
-- **Comprehensive References** - Implementation guides and architectural patterns
+- frontend-react-component:
+    - **React Component Development** - Production-ready component templates and patterns
+    - **Modern Development Patterns** - Hooks, TypeScript, and best practices
+    - **Automated Tooling** - Scripts for component generation and validation
+    - **Comprehensive References** - Implementation guides and architectural patterns
 
 ## Quick Start
 
